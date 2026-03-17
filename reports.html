@@ -1,0 +1,84 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AssetVault | Reports</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <script src="js/auth.js"></script>
+</head>
+<body>
+  <script>requireAuth();</script>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-badge">AV</div>
+        AssetVault
+      </div>
+      <div class="nav-group">
+        <a class="nav-link" href="home.html">Home</a>
+        <a class="nav-link" href="dashboard.html">Dashboard</a>
+        <a class="nav-link" href="assets.html">Asset List</a>
+        <a class="nav-link" href="add-asset.html">Add Asset</a>
+        <a class="nav-link" href="asset-details.html">Asset Details</a>
+        <a class="nav-link" href="assignment-history.html">Assignment History</a>
+        <a class="nav-link" href="maintenance-log.html">Maintenance Log</a>
+        <a class="nav-link" href="reports.html">Reports</a>
+        <a class="nav-link" href="alerts.html">Alerts <span class="status-pill">3</span></a>
+        <a class="nav-link" href="documents.html">Documents</a>
+        <a class="nav-link" href="settings.html">Settings</a>
+        <a class="nav-link" href="help.html">Help</a>
+        <a class="nav-link" href="profile.html">Profile</a>
+      </div>
+      <button class="btn btn-outline" data-logout>Logout</button>
+    </aside>
+    <main>
+      <div class="topbar">
+        <button class="btn btn-outline mobile-only" data-toggle-sidebar>Menu</button>
+        <div class="search">Generate custom analytics...</div>
+        <div>
+          <strong data-user-name>Asset Manager</strong><br />
+          <span class="helper" data-user-email>manager@assetvault.io</span>
+        </div>
+      </div>
+      <section class="content">
+        <div class="card">
+          <h2>Reports</h2>
+          <p class="helper">Download insights and compliance summaries.</p>
+        </div>
+        <div class="card-grid">
+          <div class="card">
+            <h3>Monthly Asset Summary</h3>
+            <p class="helper">Inventory counts, depreciation, utilization.</p>
+            <button class="btn btn-outline">Export PDF</button>
+          </div>
+          <div class="card">
+            <h3>Compliance Readiness</h3>
+            <p class="helper">Audit trail, security checks, maintenance logs.</p>
+            <button class="btn btn-outline">Generate Report</button>
+          </div>
+          <div class="card">
+            <h3>Assignment Utilization</h3>
+            <p class="helper">Handoff velocity, idle assets, team coverage.</p>
+            <button class="btn btn-outline">View Analytics</button>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Scheduled Reports</h3>
+          <div class="panel-list">
+            <div class="panel-item">
+              <strong>Quarterly Compliance Pack</strong>
+              <span class="helper">Sends to compliance@assetvault.io</span>
+            </div>
+            <div class="panel-item">
+              <strong>Weekly Asset Utilization</strong>
+              <span class="helper">Sends to ops@assetvault.io</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+  <script src="js/app.js"></script>
+</body>
+</html>
